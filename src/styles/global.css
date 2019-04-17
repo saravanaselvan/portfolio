@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto');
+
+body {
+  font-family: 'Raleway', sans-serif;
+  /* margin: auto;
+  width: 750px; */
+  /* background: #ddd; */
+}
+
+html, body {
+  height: 100%;
+}
+
+#___gatsby {
+  min-height: 100%;
+  background: white;
+}
+div[role="group"][tabindex] {
+  min-height: 100%;
+}
+ul {
+  margin: 0;
+}

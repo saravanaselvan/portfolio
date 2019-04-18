@@ -1,0 +1,19 @@
+.container {
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container ul li {
+  list-style-type: circle;
+}
+
+.title {
+  font-weight: 900;
+  color: #d28014;
+}
+
+.tools {
+  font-weight: 900;
+  color: darkblue;
+}

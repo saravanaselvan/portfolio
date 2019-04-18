@@ -54,7 +54,7 @@ export const PROJECTS = [
           "Designed and Developed a Student management system",
           "Helped the client to migrate to the new system from the old system in which Student details are managed manually",
           "Modified the User Interface to use Bootstrap with Angular JS",
-          "Built the Parents facing site as a SPA with Angular JS - https://mocks.elevenplusexams.co.uk",
+          "Built the Parents facing site as a SPA with Angular JS - <a href='https://mocks.elevenplusexams.co.uk'>https://mocks.elevenplusexams.co.uk</a>",
           "Implemented Parents Sign up and register for exams for their kids",
           "It has saved a lot of time for the management in manually adding the student details",
           "Integrated Stripe for parents to directly purchase exams and receive Hall ticket with QR Code",

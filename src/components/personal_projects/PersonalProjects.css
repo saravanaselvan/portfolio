@@ -1,0 +1,29 @@
+h2 {
+  font-size: 1.09em;
+  margin-top: 0px;
+  color: grey;
+}
+
+h2 a {
+  text-decoration: none;
+  color: grey;
+}
+.project-container {
+  margin-left: 25px;
+}
+
+.github-link {
+  height: 25px;
+  margin-left: 10px;
+  margin-bottom: -3px;
+}
+
+.vscode-link {
+  height: 30px;
+  margin-left: 10px;
+  margin-bottom: -4px;
+}
+
+.project-description {
+  margin-bottom: 10px;
+}

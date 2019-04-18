@@ -1,35 +1,49 @@
 import React from "react"
+import "./PersonalProjects.css"
+import githubLogo from "../../images/github-logo.png"
+import vsCodeDarkLogo from "../../images/vscode-dark-blue.png"
 
 const PersonalProjects = props => {
   return (
     <section id="projects">
       <h1>Personal Projects</h1>
-      <ul>
-        <li>
-          A To Do application with provisions log using React JS
-          (https://www.spss.io) – Implemented Google Authentication with
-          Firebase integration. Deployed using Netlify. Code:
-          https://github.com/saravanaselvan/reacttodo
-        </li>
-        <li>
+      <div className="project-container">
+        <h2>
+          <a href="https://github.com/saravanaselvan/reacttodo">
+            React To Do
+            <img className="github-link" src={githubLogo} alt="Github Logo" />
+          </a>
+        </h2>
+        <div className="project-description">
+          A To Do application with provisions log using React JS. Implemented
+          Google Authentication with Firebase integration. Deployed using
+          Netlify.
+        </div>
+        <h2>
+          <a href="https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.mocha-test-generator">
+            VS Code Extension
+            <img
+              className="vscode-link"
+              src={vsCodeDarkLogo}
+              alt="Github Logo"
+            />
+          </a>
+        </h2>
+        <div className="project-description">
           Built a VS Code extension to generate Mocha Test skeleton for Express
           JS Controller TS files.
-          <ul>
-            <li>
-              Link -
-              https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.mocha-test-generator
-            </li>
-            <li>
-              Source Code:
-              https://github.com/saravanaselvan/mocha-test-generator
-            </li>
-          </ul>
-        </li>
-        <li>
+        </div>
+        <h2>
+          <a href="https://github.com/saravanaselvan/simple-node-server">
+            Node JS HTTP Server
+            <img className="github-link" src={githubLogo} alt="Github Logo" />
+          </a>
+        </h2>
+        <div className="project-description">
           Simple HTTP Server which can be installed globally to serve HTML file
-          in port 3000 - https://github.com/saravanaselvan/simple-node-server
-        </li>
-      </ul>
+          in port 3000
+        </div>
+      </div>
     </section>
   )
 }

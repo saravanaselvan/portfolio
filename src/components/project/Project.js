@@ -2,14 +2,7 @@ import React from "react"
 import styles from "./Project.module.css"
 
 const Project = ({ projectDetail }) => {
-  const {
-    company,
-    duration,
-    role,
-    client,
-    tools,
-    projectDetails,
-  } = projectDetail
+  const { company, duration, role, tools, projectDetails } = projectDetail
   return (
     <section className={styles.container}>
       <div className={styles.title}>
@@ -22,10 +15,12 @@ const Project = ({ projectDetail }) => {
       {projectDetails.map((projectDetail, i) => {
         return (
           <div key={i}>
-            <div>{projectDetail.title}</div>
+            <h2 className={styles.projectTitle}>{projectDetail.title}</h2>
             <ul>
               {projectDetail.responsibilities.map((res, index) => {
-                return <li key={index}>{res}</li>
+                return (
+                  <li key={index} dangerouslySetInnerHTML={{ __html: res }} />
+                )
               })}
             </ul>
           </div>

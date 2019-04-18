@@ -26,9 +26,13 @@ ul {
 #projects,
 #work_experience {
   display: flex;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 3px solid #ddd;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+
+#work_experience {
+  border-bottom: none;
 }
 
 @media (max-width: 400px) {
@@ -40,7 +44,7 @@ ul {
   #professional_summary ul,
   #projects ul,
   #work_experience ul {
-    list-style: circle;
+    list-style: disc;
     padding-left: 10px;
   }
 }
@@ -57,6 +61,6 @@ ul {
 #professional_summary ul,
 #projects ul,
 #work_experience ul {
-  list-style: circle;
+  list-style: disc;
   overflow-wrap: break-word;
 }

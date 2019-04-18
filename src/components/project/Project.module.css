@@ -6,6 +6,7 @@
 
 .container ul li {
   list-style-type: circle;
+  overflow-wrap: break-word;
 }
 
 .title {

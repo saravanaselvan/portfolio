@@ -6,6 +6,8 @@ nav {
   overflow: auto;
   box-shadow: 0 0 5px #ddd;
   background: #fff;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 nav ul {
   list-style: none;
@@ -21,4 +23,16 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
+}
+
+.github-logo {
+  height: 40px;
+  padding-left: 10px;
+  float: left;
+}
+@media (max-width: 400px) {
+  nav {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }

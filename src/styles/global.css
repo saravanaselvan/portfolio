@@ -2,9 +2,7 @@
 
 body {
   font-family: "Libre Franklin", sans-serif;
-  /* margin: auto;
-  width: 750px; */
-  /* background: #ddd; */
+  background: #f7f7f7;
 }
 
 html,
@@ -15,7 +13,7 @@ body {
 
 #___gatsby {
   min-height: 100%;
-  background: white;
+  /* background: white; */
 }
 div[role="group"][tabindex] {
   min-height: 100%;
@@ -33,6 +31,19 @@ ul {
   padding-top: 10px;
 }
 
+@media (max-width: 400px) {
+  #professional_summary,
+  #projects,
+  #work_experience {
+    display: block;
+  }
+  #professional_summary ul,
+  #projects ul,
+  #work_experience ul {
+    list-style: circle;
+    padding-left: 10px;
+  }
+}
 #professional_summary h1,
 #projects h1,
 #work_experience h1 {
@@ -47,5 +58,5 @@ ul {
 #projects ul,
 #work_experience ul {
   list-style: circle;
-  /* padding-left: 0px; */
+  overflow-wrap: break-word;
 }

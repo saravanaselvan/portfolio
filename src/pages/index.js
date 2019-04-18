@@ -5,7 +5,7 @@ import Resume from "./resume"
 export default () => {
   return (
     <div className={styles.container}>
-      <Resume />
+      <Resume style={{ background: "black" }} />
     </div>
   )
 }

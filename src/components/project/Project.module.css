@@ -26,3 +26,11 @@
   color: grey;
   font-weight: 900;
 }
+
+@media (max-width: 400px) {
+  .title,
+  .tools,
+  .projectTitle {
+    margin-left: 0px;
+  }
+}

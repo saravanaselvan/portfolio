@@ -1,0 +1,17 @@
+.calc-container {
+  display: inline-block;
+}
+
+.output {
+  border: 1px solid #ddd;
+  height: 40px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}

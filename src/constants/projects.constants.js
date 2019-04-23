@@ -4,7 +4,7 @@ export const PROJECTS = [
     duration: "NOV 2017 – TILL DATE",
     role: "Lead Developer",
     client: "IFF, Chennai",
-    tools: "Angular 5, Typescript, Node JS/Express JS, VS Code, GIT, Jenkins.",
+    tools: "Angular 6, Typescript, Node JS/Express JS, VS Code, GIT, Jenkins.",
     projectDetails: [
       {
         title: "",
@@ -43,7 +43,7 @@ export const PROJECTS = [
   },
   {
     company: "7th CROSS TECHNOLOGIES (FREELANCE CLIENT)",
-    duration: "JAN 2013 – SEP 2016",
+    duration: "JAN 2014 – SEP 2016",
     role: "Full Stack Developer",
     client: "Elevenplus Exams, UK (https://www.elevenplusexams.co.uk)",
     tools: "Angular JS, Jquery, Ruby On Rails, My SQL, nginx, Puma, Passenger",
@@ -65,9 +65,9 @@ export const PROJECTS = [
         ],
       },
       {
-        title: "QUIZ APPLICATION",
+        title: "STUDENT COMPETENCY ASSESSEMENT",
         responsibilities: [
-          "Migrated a quiz application for students from legacy Flash app to Web application with Angular JS & ROR",
+          "Migrated a student competency assessment application for students from legacy Flash app to Web application with Angular JS & ROR",
           "There was already a migration effort happened using Jquery from Flash. It was running as a separate application",
           "Once the Angular JS app was ready, I have migrated data from the Jquery based app to the new app",
         ],

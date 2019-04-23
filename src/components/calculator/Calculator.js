@@ -5,37 +5,49 @@ import CalcButton from "./CalcButton";
 class Calculator extends Component {
 
   state = {
-    output: '',
-    newInput: false,
-    input: 0,
-    operator: ''
+    display: '',
+    operator: '',
+    previousValue: '',
+    currentValue: '',
+    result: 0,
+    newValue: false
   }
-  updateOutput = (event) => {
-    if (this.state.output.length === 15) {
-      return;
+  updateDisplay = (event) => {
+    let display = `${this.state.display}${event.target.value}`;
+    if(this.state.newValue) {
+      display = event.target.value;
     }
-    let output = this.state.output;
-    if(this.state.newInput) {
-      output = '';
-      this.setState({ newInput: false });
-    }
-    let display = `${output}${event.target.value}`;
-    this.setState({output: display});
+    this.setState({ display, previousValue: parseFloat(display), newValue: false });
   }
 
   add = () => {
-    const result = parseFloat(this.state.input) + parseFloat(this.state.output);
-    this.setState({ newInput: true, output: result.toString(), input: result.toString(), operator: 'add' });
+    let currentValue = this.state.currentValue;
+    if(isNaN(parseFloat(this.state.currentValue))) {
+      currentValue = 0;
+    }
+    let calculatedValue = currentValue + this.state.previousValue;
+    this.setState({ 
+      display: calculatedValue.toString(), 
+      previousValue: this.state.previousValue, 
+      currentValue: calculatedValue, 
+      newValue: true,
+      operator: 'add'
+    });
   }
 
   multiply = () => {
-    const output  = this.state.output || 1;
-    let input = 1;
-    if(this.state.input > 0 ) {
-      input = this.state.input;
+    let currentValue = this.state.currentValue;
+    if(isNaN(parseFloat(this.state.currentValue))) {
+      currentValue = 1;
     }
-    const result = parseFloat(input) * parseFloat(output);
-    this.setState({ newInput: true, output: result.toString(), input: result.toString(), operator: 'multiply' });    
+    let calculatedValue = currentValue * this.state.previousValue;
+    this.setState({ 
+      display: calculatedValue.toString(), 
+      previousValue: this.state.previousValue, 
+      currentValue: calculatedValue, 
+      newValue: true,
+      operator: 'multiply'
+    });    
   }
 
   equals = () => {
@@ -51,8 +63,15 @@ class Calculator extends Component {
     }
   }
   backspace = () => {
-    let output = this.state.output;
-    this.setState({ output: output.slice(0, output.length - 1) });
+    let display = this.state.display;
+    this.setState({     
+      display: '',
+      operator: '',
+      previousValue: '',
+      currentValue: '',
+      result: 0,
+      newValue: false 
+    });
   }
 
   render() {
@@ -87,14 +106,14 @@ class Calculator extends Component {
     return (
       <div className="calc-container">
         <div className="output">
-          {this.state.output}
+          {this.state.display}
         </div>
         <div className="buttons">
           <div className="row">
             {
               row1.map((row) => {
                 return (
-                  <CalcButton id={row.id} key={row.id} updateOutput={row.clickHandler ? row.clickHandler : this.updateOutput}>{row.text}</CalcButton>
+                  <CalcButton id={row.id} key={row.id} updateDisplay={row.clickHandler ? row.clickHandler : this.updateDisplay}>{row.text}</CalcButton>
                 )
               })
             }
@@ -103,7 +122,7 @@ class Calculator extends Component {
           {
               row2.map((row) => {
                 return (
-                  <CalcButton id={row.id} key={row.id} updateOutput={row.clickHandler ? row.clickHandler : this.updateOutput}>{row.text}</CalcButton>
+                  <CalcButton id={row.id} key={row.id} updateDisplay={row.clickHandler ? row.clickHandler : this.updateDisplay}>{row.text}</CalcButton>
                 )
               })
             }
@@ -112,7 +131,7 @@ class Calculator extends Component {
           {
               row3.map((row) => {
                 return (
-                  <CalcButton id={row.id} key={row.id} updateOutput={row.clickHandler ? row.clickHandler : this.updateOutput}>{row.text}</CalcButton>
+                  <CalcButton id={row.id} key={row.id} updateDisplay={row.clickHandler ? row.clickHandler : this.updateDisplay}>{row.text}</CalcButton>
                 )
               })
             }
@@ -121,7 +140,7 @@ class Calculator extends Component {
           {
               row4.map((row) => {
                 return (
-                  <CalcButton id={row.id} key={row.id} flexGrow={row.flexGrow} updateOutput={row.clickHandler ? row.clickHandler : this.updateOutput}>{row.text}</CalcButton>
+                  <CalcButton id={row.id} key={row.id} flexGrow={row.flexGrow} updateDisplay={row.clickHandler ? row.clickHandler : this.updateDisplay}>{row.text}</CalcButton>
                 )
               })
             }

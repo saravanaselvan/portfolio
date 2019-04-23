@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/header/Header';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import PersonalProjects from '../components/personal_projects/PersonalProjects';
 import { Helmet } from "react-helmet"
 

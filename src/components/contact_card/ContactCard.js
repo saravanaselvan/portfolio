@@ -5,7 +5,7 @@ const ContactCard = () => {
   return (
     <section id="professional_summary">
       <h1>Contact</h1>
-      <div class="contact-container">
+      <div className="contact-container">
         <div style={{fontSize: '25px'}}>Saravanaselvan SP</div>
         <span style={{color: '#226ff8'}}>
           <div>

@@ -12,7 +12,6 @@ const ContactCard = () => {
             spsaravanaselvan@gmail.com
           </div>
           <span>
-            +91 9600046225
           </span>
         </span>
       </div>

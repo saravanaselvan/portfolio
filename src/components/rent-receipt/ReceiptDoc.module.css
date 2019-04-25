@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;  
+  width: 700px;
+  position: absolute;
+  top: 75px;
+  right: 90px;
+}
+
+.title {
+  align-self: center;
+  font-size: 20px;
+  font-weight: 900;
+  padding: 15px;
+}
+
+.description {
+  margin-bottom: 35px;
+}
+
+.owner-details {
+  display: flex;
+}
+
+.owner-name {
+  flex-basis: 75%;
+}
+
+.revenue-stamp {
+  margin-left: 15px;
+}
+
+.stamp-box {
+  width: 108px;
+  border: 1px solid black;
+  font-size: 14px;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;  
+}
+
+.signature {
+  margin-left: -25px;
+  padding-top: 45px;
+}
+
+@media print {
+  .container {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,42 @@
+.form-control {
+  display: flex;
+  margin: 10px;
+}
+
+.form-control label {
+  flex-basis: 10%;
+  align-self: center;
+  font-size: 18px;  
+}
+
+.form-control input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex-basis: 25%;
+  height: 25px;
+  font-size: 18px;
+  padding: 8px;  
+}
+
+.form-control button {
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid cornflowerblue;
+  border-radius: 4px;
+  background: cornflowerblue;
+  color: white;
+  box-shadow: 2px 2px #3e5e97;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-control button:active {
+  box-shadow: inset 2px 2px #3e5e97;
+}
+
+@media print {
+  .receipt-form {
+    display: none;
+  }
+}

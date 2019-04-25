@@ -1,4 +1,4 @@
-button {
+.button {
   height: 50px;
   width: 50px;
   border: 1px solid #ddd;
@@ -9,7 +9,7 @@ button {
   cursor: pointer;
 }
 
-button:active {
+.button:active {
   background: #ddd;
   border: 1px solid #ddd;
 }

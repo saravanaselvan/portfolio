@@ -1,12 +1,14 @@
 .form-control {
   display: flex;
   margin: 10px;
+  flex-wrap: wrap;
 }
 
 .form-control label {
   flex-basis: 10%;
   align-self: center;
   font-size: 18px;  
+  flex-grow: 1;
 }
 
 .form-control input {

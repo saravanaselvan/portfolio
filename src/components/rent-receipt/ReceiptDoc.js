@@ -8,7 +8,7 @@ const ReceiptDoc = (props) => {
     <div className={styles.container}>
       <div className={styles.title}>RENT RECEIPT</div>
       <section className={styles.description}>
-        Received from <strong>{name}</strong> a sum of <strong>Rs. {amount} </strong>(Rupees ) towards rent for the period from <strong>{from}</strong> to <strong>{to}</strong> for the 
+        Received from <strong>{name}</strong> a sum of <strong>Rs. {amount} </strong> towards rent for the period from <strong>{from}</strong> to <strong>{to}</strong> for the 
         property at <strong>{address}</strong>
       </section>
       <section className={styles.ownerDetails}>

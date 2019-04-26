@@ -43,6 +43,14 @@ const PersonalProjects = props => {
           Simple HTTP Server which can be installed globally to serve HTML file
           in port 3000
         </div>
+        <h2>
+          <a href="https://portfolio.spss.com/saravanaselvan/rent-receipt">
+            Rent Receipt Generator
+          </a>
+        </h2>
+        <div className="project-description">
+          Simple form to fill user details and generate rent receipt. Access ,<a href="/rent-receipt">here</a>
+        </div>
       </div>
     </section>
   )

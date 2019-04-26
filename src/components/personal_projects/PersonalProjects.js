@@ -1,5 +1,5 @@
 import React from "react"
-Import { Link } from "gatsby"
+import { Link } from "gatsby"
 import "./PersonalProjects.css"
 import githubLogo from "../../images/github-logo.png"
 import vsCodeDarkLogo from "../../images/vscode-dark-blue.png"

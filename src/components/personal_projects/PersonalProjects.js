@@ -1,4 +1,5 @@
 import React from "react"
+Import { Link } from "gatsby"
 import "./PersonalProjects.css"
 import githubLogo from "../../images/github-logo.png"
 import vsCodeDarkLogo from "../../images/vscode-dark-blue.png"
@@ -49,7 +50,7 @@ const PersonalProjects = props => {
           </a>
         </h2>
         <div className="project-description">
-          Simple form to fill user details and generate rent receipt. Access ,<a href="/rent-receipt">here</a>
+          Simple form to fill user details and generate rent receipt. Access <Link to="/rent-receipt"><strong>HERE</strong></Link>
         </div>
       </div>
     </section>

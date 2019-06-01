@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProfessionalSummary = (props) => {
   const summary = [
-    "Having 10 years of experience in Web Development",
+    "Having 12+ years of experience in Web Development",
     "Exposure to Web App development with Jquery, Angular JS, Angular 2+, Ruby on Rails & Express JS.",
     "Experience in working with Agile delivery model with focus on testing within iterations.",
     "Experienced in working with Continuous performance delivery model using Jenkins.",

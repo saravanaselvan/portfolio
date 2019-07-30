@@ -18,7 +18,7 @@ const PersonalProjects = props => {
         <div className="project-description">
           A To Do application with provisions log using React JS. Implemented
           Google Authentication with Firebase integration. Deployed using
-          Netlify.
+          Netlify - <a href="https://spss.io">https://spss.io</a>
         </div>
         <h2>
           <a href="https://marketplace.visualstudio.com/items?itemName=Saravanaselvan.mocha-test-generator">
